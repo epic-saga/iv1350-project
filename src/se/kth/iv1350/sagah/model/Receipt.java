@@ -1,6 +1,7 @@
 package se.kth.iv1350.sagah.model;
 import java.time.LocalDateTime;
 import java.util.List;
+import se.kth.iv1350.sagah.util.DateHandler;
 
 /**
  * Represents the receipt for the sale
@@ -38,7 +39,7 @@ public class Receipt {
     public String receiptToString(){
         StringBuilder builder = new StringBuilder();
         builder.append("Receipt\n");
-        builder.append(formatSaleTime());
+        builder.append(new DateHandler().createTime());
         builder.append("Store name: " + storeName + "\n");
         builder.append("Store address: " + storeAddress + "\n");
         for (AddedItem item:itemList){

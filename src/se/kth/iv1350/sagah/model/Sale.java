@@ -1,6 +1,7 @@
 package se.kth.iv1350.sagah.model;
 
 import java.util.List;
+import se.kth.iv1350.sagah.integration.InvalidItemException;
 import se.kth.iv1350.sagah.integration.IntegrationHandler;
 import se.kth.iv1350.sagah.integration.ItemDTO;
 
@@ -27,8 +28,10 @@ public class Sale {
          * @param itemIdentifier The item identifier
          * @param amount The amount of items
          * @return Information about the item added
+         * @throws InvalidItemException if the item identifier is invalid
+         * @throws ExternalSystemException if database could not be reached
          */
-        public CurrentItem addItem(int itemIdentifier, int amount){
+        public CurrentItem addItem(int itemIdentifier, int amount) throws InvalidItemException{
             CurrentItem currentItem;
             ItemDTO newItem;
             if (saleLog.itemAlreadyAdded(itemIdentifier))

@@ -7,7 +7,10 @@ class InventoryHandler {
     InventoryHandler(){
         reg = new ItemRegistry();
     }
-    ItemDTO searchForItem(int itemIdentifier){
+    ItemDTO searchForItem(int itemIdentifier) throws InvalidItemException{
+        if(itemIdentifier == 13){
+            throw new ExternalSystemException("Could not connect to database");
+        }
         return reg.searchForItem(itemIdentifier);
     }
     void updateInventory(Receipt saleInfo){

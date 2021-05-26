@@ -27,8 +27,10 @@ public class IntegrationHandler {
      * Searches the inventory for specific item
      * @param itemIdentifier The identifier for the desired item
      * @return The ItemDTO of the item searched for
+     * @throws InvalidItemException if the item can not be found
+     * @throws ExternalSystemException if the database can not be reached
      */
-    public ItemDTO getItem(int itemIdentifier){
+    public ItemDTO getItem(int itemIdentifier) throws InvalidItemException{
         return inv.searchForItem(itemIdentifier);
     }
     /**

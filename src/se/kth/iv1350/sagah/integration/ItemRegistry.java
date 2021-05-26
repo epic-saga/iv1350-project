@@ -21,11 +21,11 @@ class ItemRegistry {
         itemList.add(new ItemDTO("Garlic", "To keep the demons at bay", 20, 9, 0.12));
         itemList.add(new ItemDTO("Bay leaves", "For soup for your family", 12, 10, 0.6));
     }
-    ItemDTO searchForItem(int identifier){
+    ItemDTO searchForItem(int identifier) throws InvalidItemException{
         for (ItemDTO item : itemList){
             if(item.getIdentifier() == identifier)
                 return item;
         }
-        return null;
+        throw new InvalidItemException("There is no item with identifier " + identifier);
     }
 }
