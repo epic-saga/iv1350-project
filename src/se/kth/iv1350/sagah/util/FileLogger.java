@@ -8,6 +8,7 @@ package se.kth.iv1350.sagah.util;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import se.kth.iv1350.sagah.model.SalePriceDTO;
 
 /**
  *
@@ -22,14 +23,22 @@ public class FileLogger {
         dateHandler = new DateHandler();
     }
     public void logException(Exception e){
-        System.out.println("log exception");
         StringBuilder logMsgBuilder = new StringBuilder();
         logMsgBuilder.append(dateHandler.createTime());
-        logMsgBuilder.append(", Exception was thrown: ");
+        logMsgBuilder.append("Exception was thrown: ");
         logMsgBuilder.append(e.getMessage());
         logFile.println(logMsgBuilder);
         e.printStackTrace(logFile);
         logFile.close();
+    }
+    public void logRevenue(double total){
+        //System.out.println("logging revenue " + total);
+        StringBuilder logMsgBuilder = new StringBuilder();
+        logMsgBuilder.append(dateHandler.createTime());
+        logMsgBuilder.append(String.format(" Total revenue: %.2f SEK", total));
+        logFile.println(logMsgBuilder);
+        logFile.flush();
+        //logFile.close();     
     }
     
 }

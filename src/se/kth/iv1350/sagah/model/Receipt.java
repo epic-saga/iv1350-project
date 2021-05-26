@@ -47,9 +47,9 @@ public class Receipt {
             builder.append(item.getItemDTO().getName() + " ");
             builder.append(item.getItemDTO().getPrice() + " SEK\n");
         }
-        builder.append("Total price: " + totalPrice + " SEK\n");
-        builder.append("VAT for entire sale: " + VAT + " SEK\n");
-        builder.append("Amount paid: " + amountPaid + " SEK\n");
+        builder.append(String.format("Total price: %.2f SEK\n", totalPrice));
+        builder.append(String.format("VAT for entire sale: %.2f SEK\n", VAT));
+        builder.append(String.format("Amount paid: %.2f SEK\n", amountPaid));
         builder.append("Change: " + change + " SEK\n");
         return builder.toString();
     }

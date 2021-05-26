@@ -1,5 +1,6 @@
 package se.kth.iv1350.sagah.model;
 
+import java.util.ArrayList;
 import java.util.List;
 import se.kth.iv1350.sagah.integration.InvalidItemException;
 import se.kth.iv1350.sagah.integration.IntegrationHandler;
@@ -13,6 +14,7 @@ public class Sale {
         private final IntegrationHandler integr;
         private final SalePrice salePrice;
         private final SaleLog saleLog;
+        private List<SaleObserver> saleObservers = new ArrayList<>();
 
         /**
          * Creates a new instance, representing the current sale
@@ -60,8 +62,16 @@ public class Sale {
             List<AddedItem> itemList = saleLog.getItemList();
             Receipt receipt = new Receipt(itemList, total, payment);
             integr.completedSale(receipt);
-            
+            notifyObservers();
             return payment;
+        }
+        private void notifyObservers(){
+            for (SaleObserver obs : saleObservers){
+                obs.completedSale(salePrice.getTotal());
+            }
+        }
+        public void addSaleObserver(SaleObserver obs){
+            saleObservers.add(obs);
         }
 
 }

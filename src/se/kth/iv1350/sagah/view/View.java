@@ -6,27 +6,22 @@ import se.kth.iv1350.sagah.controller.OperationFailedException;
 import se.kth.iv1350.sagah.model.CurrentItem;
 import se.kth.iv1350.sagah.model.PaymentDTO;
 import se.kth.iv1350.sagah.util.FileLogger;
+import se.kth.iv1350.sagah.util.TotalRevenueFileOutput;
 
 public class View {
 	private Controller contr;
-        private FileLogger revenueLog;
 
 	public View(Controller contr) throws IOException{
 		this.contr = contr; 
-                revenueLog = new FileLogger("revenue-log.txt");
                 
 	}
         private void printCurrentItem(CurrentItem currentItem){
             System.out.println(currentItem.getName() + ": " + currentItem.getDescription());
-            System.out.println("Price: " + currentItem.getPrice() + " SEK\nRunning total: " + currentItem.getRunningTotal() + " SEK\n");                
+            System.out.println(String.format("Price: %.2f SEK\nRunning total: %.2f SEK\n", currentItem.getPrice(),currentItem.getRunningTotal()));                
         }
-        /**
-         * Simulates a user scenario
-         */
-        public void exampleRun(){
-            try{
+        private void saleProcess(int [] listOfItems){
+                int [] listOfItemIdentifiers = listOfItems;
                 contr.startSale();
-                int [] listOfItemIdentifiers = new int[]{1, 2, 11, 4, 13};
                 for(int i = 0; i < listOfItemIdentifiers.length; i++){
                     try{
                         printCurrentItem(contr.enterItem(listOfItemIdentifiers[i], 1));
@@ -35,9 +30,22 @@ public class View {
                     }
                 }
                 double totalAmount = contr.endSale().getTotal();
-                System.out.println("Total amount: " + totalAmount+ " SEK\n");
+                System.out.println(String.format("Total amount: %.2f SEK\n", totalAmount));
                 PaymentDTO change = contr.addPayment(Math.round(((totalAmount+5)/10.0))*10);
-                System.out.println("The change is " + change.getChange() + " SEK"); 
+                System.out.println(String.format("The change is %.2f SEK\n", change.getChange())); 
+        }
+        /**
+         * Simulates a user scenario
+         */
+        public void exampleRun(){
+            try{
+                contr.addSaleObserver(new TotalRevenueFileOutput());
+                contr.addSaleObserver(new TotalRevenueView());
+                saleProcess(new int[]{1,2,3,4});
+                saleProcess(new int[]{5,5,6});
+                saleProcess(new int[]{8,9,10,11});
+                saleProcess(new int[]{2,5,7,10,13});
+
             }catch(Exception e){
                 System.out.println(e);
             }

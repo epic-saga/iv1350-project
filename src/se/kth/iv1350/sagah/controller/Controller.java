@@ -1,6 +1,8 @@
 package se.kth.iv1350.sagah.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import se.kth.iv1350.sagah.integration.IntegrationHandler;
 import se.kth.iv1350.sagah.integration.CashRegister;
 import se.kth.iv1350.sagah.integration.ExternalSystemException;
@@ -8,6 +10,7 @@ import se.kth.iv1350.sagah.integration.InvalidItemException;
 import se.kth.iv1350.sagah.model.CurrentItem;
 import se.kth.iv1350.sagah.model.PaymentDTO;
 import se.kth.iv1350.sagah.model.Sale;
+import se.kth.iv1350.sagah.model.SaleObserver;
 import se.kth.iv1350.sagah.model.SalePriceDTO;
 import se.kth.iv1350.sagah.util.FileLogger;
 
@@ -20,6 +23,7 @@ public class Controller {
         private final CashRegister cashRegister;
         private FileLogger errorLog;
         private Sale sale;
+        private List<SaleObserver> saleObservers = new ArrayList<>();
         
         /**
         * Creates a new instance
@@ -35,6 +39,9 @@ public class Controller {
         */
 	public void startSale(){
 		sale = new Sale(integr);
+                for (SaleObserver obs : saleObservers){
+                    sale.addSaleObserver(obs);
+                }
 	}
          /**
          * Adds item to ongoing sale
@@ -68,5 +75,12 @@ public class Controller {
         public PaymentDTO addPayment(double amountPaid){
             cashRegister.updateCashRegister(amountPaid);
             return sale.completeSale(amountPaid);
-        }        
+        } 
+        /**
+         * The observer will be notified when a sale has been completed
+         * @param obs The observer to notify
+         */
+        public void addSaleObserver(SaleObserver obs){
+            saleObservers.add(obs);
+        }
 }
