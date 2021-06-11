@@ -1,0 +1,94 @@
+Tomato: Technically fruit
+Price: 5,00 SEK
+Running total: 5,60 SEK
+
+Coffee: Morning brew
+Price: 30,00 SEK
+Running total: 43,10 SEK
+
+Flour: 1kg wheat flour
+Price: 9,00 SEK
+Running total: 57,50 SEK
+
+Bread: Get that bread
+Price: 6,00 SEK
+Running total: 67,10 SEK
+
+Total amount: 67,10 SEK
+
+Receipt
+2021-06-09 22:20
+Store name: Hopes&Dreams
+Store address: Abby road
+1 Tomato 5.0 SEK
+1 Coffee 30.0 SEK
+1 Flour 9.0 SEK
+1 Bread 6.0 SEK
+Total price: 67,10 SEK
+VAT for entire sale: 17,10 SEK
+Amount paid: 70,00 SEK
+Change: 2.9 SEK
+
+Total revenue is 67,10 SEK
+The change is 2,90 SEK
+
+Juice: When life gives you lemons
+Price: 25,00 SEK
+Running total: 28,00 SEK
+
+Juice: When life gives you lemons
+Price: 25,00 SEK
+Running total: 56,00 SEK
+
+Chocolate: Bitter-sweet
+Price: 28,00 SEK
+Running total: 91,00 SEK
+
+Total amount: 91,00 SEK
+
+Receipt
+2021-06-09 22:20
+Store name: Hopes&Dreams
+Store address: Abby road
+2 Juice 25.0 SEK
+1 Chocolate 28.0 SEK
+Total price: 91,00 SEK
+VAT for entire sale: 13,00 SEK
+Amount paid: 100,00 SEK
+Change: 9.0 SEK
+
+Total revenue is 158,10 SEK
+The change is 9,00 SEK
+
+Cabbage: Brought to you by that one merchant
+Price: 6,00 SEK
+Running total: 9,60 SEK
+
+Garlic: To keep the demons at bay
+Price: 20,00 SEK
+Running total: 32,00 SEK
+
+Bay leaves: For soup for your family
+Price: 12,00 SEK
+Running total: 51,20 SEK
+
+ERROR: Could not enter item. There is no item with identifier 11
+
+ERROR: Could not enter item. Please try again.
+
+Total amount: 51,20 SEK
+
+Receipt
+2021-06-09 22:20
+Store name: Hopes&Dreams
+Store address: Abby road
+1 Cabbage 6.0 SEK
+1 Garlic 20.0 SEK
+1 Bay leaves 12.0 SEK
+Total price: 51,20 SEK
+VAT for entire sale: 13,20 SEK
+Amount paid: 60,00 SEK
+Change: 8.8 SEK
+
+Total revenue is 209,30 SEK
+The change is 8,80 SEK

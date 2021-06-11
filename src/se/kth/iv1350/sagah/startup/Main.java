@@ -10,6 +10,7 @@ public class Main {
 	/*	Used to start up application */
 
 	public static void main(String args[]) throws IOException{
+                //PrintStream o = new PrintStream)
 		IntegrationHandler integr = new IntegrationHandler();
 		Controller contr = new Controller(integr);
 		new View(contr).exampleRun();

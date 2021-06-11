@@ -25,3 +25,103 @@ se.kth.iv1350.sagah.integration.ExternalSystemException: Could not connect to da
 	at se.kth.iv1350.sagah.controller.Controller.enterItem(Controller.java:48)
 	at se.kth.iv1350.sagah.view.View.exampleRun(View.java:32)
 	at se.kth.iv1350.sagah.startup.Main.main(Main.java:15)
+2021-05-26 16:11
+Exception was thrown: Could not connect to database
+se.kth.iv1350.sagah.integration.ExternalSystemException: Could not connect to database
+	at se.kth.iv1350.sagah.integration.InventoryHandler.searchForItem(InventoryHandler.java:12)
+	at se.kth.iv1350.sagah.integration.IntegrationHandler.getItem(IntegrationHandler.java:34)
+	at se.kth.iv1350.sagah.model.Sale.addItem(Sale.java:42)
+	at se.kth.iv1350.sagah.controller.Controller.enterItem(Controller.java:55)
+	at se.kth.iv1350.sagah.view.View.saleProcess(View.java:27)
+	at se.kth.iv1350.sagah.view.View.exampleRun(View.java:46)
+	at se.kth.iv1350.sagah.startup.Main.main(Main.java:15)
+2021-05-26 16:15
+Exception was thrown: Could not connect to database
+se.kth.iv1350.sagah.integration.ExternalSystemException: Could not connect to database
+	at se.kth.iv1350.sagah.integration.InventoryHandler.searchForItem(InventoryHandler.java:12)
+	at se.kth.iv1350.sagah.integration.IntegrationHandler.getItem(IntegrationHandler.java:34)
+	at se.kth.iv1350.sagah.model.Sale.addItem(Sale.java:42)
+	at se.kth.iv1350.sagah.controller.Controller.enterItem(Controller.java:55)
+	at se.kth.iv1350.sagah.view.View.saleProcess(View.java:27)
+	at se.kth.iv1350.sagah.view.View.exampleRun(View.java:46)
+	at se.kth.iv1350.sagah.startup.Main.main(Main.java:15)
+2021-05-26 16:17
+Exception was thrown: Could not connect to database
+se.kth.iv1350.sagah.integration.ExternalSystemException: Could not connect to database
+	at se.kth.iv1350.sagah.integration.InventoryHandler.searchForItem(InventoryHandler.java:12)
+	at se.kth.iv1350.sagah.integration.IntegrationHandler.getItem(IntegrationHandler.java:34)
+	at se.kth.iv1350.sagah.model.Sale.addItem(Sale.java:42)
+	at se.kth.iv1350.sagah.controller.Controller.enterItem(Controller.java:55)
+	at se.kth.iv1350.sagah.view.View.saleProcess(View.java:27)
+	at se.kth.iv1350.sagah.view.View.exampleRun(View.java:46)
+	at se.kth.iv1350.sagah.startup.Main.main(Main.java:15)
+2021-05-26 16:20
+Exception was thrown: Could not connect to database
+se.kth.iv1350.sagah.integration.ExternalSystemException: Could not connect to database
+	at se.kth.iv1350.sagah.integration.InventoryHandler.searchForItem(InventoryHandler.java:12)
+	at se.kth.iv1350.sagah.integration.IntegrationHandler.getItem(IntegrationHandler.java:34)
+	at se.kth.iv1350.sagah.model.Sale.addItem(Sale.java:42)
+	at se.kth.iv1350.sagah.controller.Controller.enterItem(Controller.java:55)
+	at se.kth.iv1350.sagah.view.View.saleProcess(View.java:27)
+	at se.kth.iv1350.sagah.view.View.exampleRun(View.java:46)
+	at se.kth.iv1350.sagah.startup.Main.main(Main.java:15)
+2021-05-26 16:27
+Exception was thrown: Could not connect to database
+se.kth.iv1350.sagah.integration.ExternalSystemException: Could not connect to database
+	at se.kth.iv1350.sagah.integration.InventoryHandler.searchForItem(InventoryHandler.java:12)
+	at se.kth.iv1350.sagah.integration.IntegrationHandler.getItem(IntegrationHandler.java:34)
+	at se.kth.iv1350.sagah.model.Sale.addItem(Sale.java:42)
+	at se.kth.iv1350.sagah.controller.Controller.enterItem(Controller.java:55)
+	at se.kth.iv1350.sagah.view.View.saleProcess(View.java:27)
+	at se.kth.iv1350.sagah.view.View.exampleRun(View.java:47)
+	at se.kth.iv1350.sagah.startup.Main.main(Main.java:15)
+2021-05-26 16:35
+Exception was thrown: Could not connect to database
+se.kth.iv1350.sagah.integration.ExternalSystemException: Could not connect to database
+	at se.kth.iv1350.sagah.integration.InventoryHandler.searchForItem(InventoryHandler.java:12)
+	at se.kth.iv1350.sagah.integration.IntegrationHandler.getItem(IntegrationHandler.java:34)
+	at se.kth.iv1350.sagah.model.Sale.addItem(Sale.java:42)
+	at se.kth.iv1350.sagah.controller.Controller.enterItem(Controller.java:55)
+	at se.kth.iv1350.sagah.view.View.saleProcess(View.java:27)
+	at se.kth.iv1350.sagah.view.View.exampleRun(View.java:47)
+	at se.kth.iv1350.sagah.startup.Main.main(Main.java:15)
+2021-06-09 21:58
+Exception was thrown: Could not connect to database
+se.kth.iv1350.sagah.integration.ExternalSystemException: Could not connect to database
+	at se.kth.iv1350.sagah.integration.InventoryHandler.searchForItem(InventoryHandler.java:12)
+	at se.kth.iv1350.sagah.integration.IntegrationHandler.getItem(IntegrationHandler.java:34)
+	at se.kth.iv1350.sagah.model.Sale.addItem(Sale.java:42)
+	at se.kth.iv1350.sagah.controller.Controller.enterItem(Controller.java:55)
+	at se.kth.iv1350.sagah.view.View.saleProcess(View.java:27)
+	at se.kth.iv1350.sagah.view.View.exampleRun(View.java:47)
+	at se.kth.iv1350.sagah.startup.Main.main(Main.java:15)
+2021-06-09 22:10
+Exception was thrown: Could not connect to database
+se.kth.iv1350.sagah.integration.ExternalSystemException: Could not connect to database
+	at se.kth.iv1350.sagah.integration.InventoryHandler.searchForItem(InventoryHandler.java:12)
+	at se.kth.iv1350.sagah.integration.IntegrationHandler.getItem(IntegrationHandler.java:34)
+	at se.kth.iv1350.sagah.model.Sale.addItem(Sale.java:42)
+	at se.kth.iv1350.sagah.controller.Controller.enterItem(Controller.java:55)
+	at se.kth.iv1350.sagah.view.View.saleProcess(View.java:27)
+	at se.kth.iv1350.sagah.view.View.exampleRun(View.java:47)
+	at se.kth.iv1350.sagah.startup.Main.main(Main.java:20)
+2021-06-09 22:13
+Exception was thrown: Could not connect to database
+se.kth.iv1350.sagah.integration.ExternalSystemException: Could not connect to database
+	at se.kth.iv1350.sagah.integration.InventoryHandler.searchForItem(InventoryHandler.java:12)
+	at se.kth.iv1350.sagah.integration.IntegrationHandler.getItem(IntegrationHandler.java:34)
+	at se.kth.iv1350.sagah.model.Sale.addItem(Sale.java:42)
+	at se.kth.iv1350.sagah.controller.Controller.enterItem(Controller.java:55)
+	at se.kth.iv1350.sagah.view.View.saleProcess(View.java:27)
+	at se.kth.iv1350.sagah.view.View.exampleRun(View.java:47)
+	at se.kth.iv1350.sagah.startup.Main.main(Main.java:16)
+2021-06-09 22:20
+Exception was thrown: Could not connect to database
+se.kth.iv1350.sagah.integration.ExternalSystemException: Could not connect to database
+	at se.kth.iv1350.sagah.integration.InventoryHandler.searchForItem(InventoryHandler.java:12)
+	at se.kth.iv1350.sagah.integration.IntegrationHandler.getItem(IntegrationHandler.java:34)
+	at se.kth.iv1350.sagah.model.Sale.addItem(Sale.java:42)
+	at se.kth.iv1350.sagah.controller.Controller.enterItem(Controller.java:55)
+	at se.kth.iv1350.sagah.view.View.saleProcess(View.java:27)
+	at se.kth.iv1350.sagah.view.View.exampleRun(View.java:46)
+	at se.kth.iv1350.sagah.startup.Main.main(Main.java:16)

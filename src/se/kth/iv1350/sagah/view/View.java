@@ -5,7 +5,6 @@ import se.kth.iv1350.sagah.controller.Controller;
 import se.kth.iv1350.sagah.controller.OperationFailedException;
 import se.kth.iv1350.sagah.model.CurrentItem;
 import se.kth.iv1350.sagah.model.PaymentDTO;
-import se.kth.iv1350.sagah.util.FileLogger;
 import se.kth.iv1350.sagah.util.TotalRevenueFileOutput;
 
 public class View {
@@ -43,8 +42,7 @@ public class View {
                 contr.addSaleObserver(new TotalRevenueView());
                 saleProcess(new int[]{1,2,3,4});
                 saleProcess(new int[]{5,5,6});
-                saleProcess(new int[]{8,9,10,11});
-                saleProcess(new int[]{2,5,7,10,13});
+                saleProcess(new int[]{8,9,10,11,13});
 
             }catch(Exception e){
                 System.out.println(e);
